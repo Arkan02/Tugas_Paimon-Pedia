@@ -1,0 +1,330 @@
+/* Colors */
+:root {
+    --accent: hsl(0, 0%, 95%);
+
+    --bg-main: #F2F2F2; 
+    --bg-navbar: hsla(0, 0%, 5%, 0.8); 
+    --bg-sidebar: hsla(0, 0%, 5%, 0.8);  
+    --bg-sidebar-hover: hsla(0, 0%, 10%, 0.6); 
+
+    --text-primary: #333333;
+    --text-secondary: #666666;
+
+    --text-primary-side: hsl(0, 0%, 95%);
+    --text-secondary-side: hsl(0, 0%, 70%);
+
+    --border-color: #27313D;
+    --hover: #1A232C;
+
+    --char-anemo: hsl(194, 100%, 75%);   
+    --char-pyro: hsl(6, 100%, 73%);      
+    --char-hydro: hsl(217, 100%, 50%);   
+    --char-electro: hsl(276, 100%, 61%); 
+    --char-dendro: hsl(105, 58%, 46%);   
+    --char-cryo: hsl(195, 100%, 61%);    
+    --char-geo: hsl(54, 100%, 50%);      
+}
+
+/* Font smoothing */
+@font-face {
+    font-family: GenshinImpactFont;
+    src: url(assets/fonts/zh-cn.ttf);
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    text-rendering: optimizeLegibility;
+}
+
+.default-font {
+    font-family: GenshinImpactFont;
+}
+
+.default-color {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+}
+
+.default-background {
+    position: relative;
+    min-height: 100vh;
+    overflow: auto;
+}
+
+.default-background:before {
+    content: "";
+    position: fixed; /* stays in place when scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-image: url(assets/img/backgroundPics/image.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* filter: blur(5px); */
+    z-index: -1; 
+}
+.lock-section {
+    position: sticky;
+    top: 0; /* locks to top of viewport */
+    height: 100vh; /* take full screen height */
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: var(--bg-navbar) !important;
+    backdrop-filter: blur(8px) !important;
+    /* color: var(--text-secondary); */
+    border-bottom: 1px solid var(--border-color) !important;
+}
+.btn-dev {
+    padding: 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.1s ease-in-out;
+    color: var(--text-secondary-side);
+}
+.btn-dev:hover {
+    color: var(--text-primary-side);
+}
+
+/* Side Bar  */
+#sidebar {
+    position: fixed;
+    top: 56px;
+    left: 0;
+    width: 280px;
+    height: calc(100vh - 56px);
+    background-color: var(--bg-sidebar) !important;
+    backdrop-filter: blur(8px) !important;
+    color: var(--text-primary-side) !important;
+    overflow-y: auto;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1050;
+    transform: translateX(-100%);
+}
+
+#sidebar.open {
+    transform: translateX(0);
+}
+
+#sidebar .nav-link {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 1em;
+    color: var(--text-secondary-side) !important;
+    border-radius: 12px;
+    background-color: transparent;
+    padding-left: 1rem;
+    transition: 0.2s ease-in-out;
+    /* border-bottom: 1px solid var(--border-color); */
+}
+
+#sidebar .nav-link.active {
+    /* border-left: 3px solid var(--accent); */
+    background-color: var(--hover);
+}
+
+#sidebar .nav-link:hover {
+    background-color: var(--bg-sidebar-hover);
+    color: var(--accent) !important;
+}
+
+/* Arrow icon */
+.collapsible-link::before {
+    content: '\25B6'; 
+    display: inline-block;
+    margin-right: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--text-secondary-side);
+    transition: transform 0.2s ease-in-out, color 0.2s;
+}
+
+.collapsible-link[aria-expanded="true"]::before {
+    transform: rotate(90deg);
+    color: var(--accent);
+}
+
+/* Sub-links */
+.sub-link {
+    margin-left: 1rem !important; 
+    color: var(--text-secondary-side) !important;
+}
+
+.sub-link:hover {
+    color: var(--accent) !important;
+}
+
+.sub-link::before {
+    content: '\2022'; 
+    display: inline-block;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+    color: var(--accent);
+}
+
+@media (max-width: 991.98px) {
+    #sidebar {
+        position: fixed;
+        top: 56px;
+        left: 0;
+        z-index: 1030;
+        margin-left: -280px;
+    }
+
+    #sidebar.collapsed {
+        margin-left: -280px;
+    }
+
+    #sidebar:not(.collapsed) {
+        margin-left: 0;
+    }
+    
+    #main-content {
+        margin-left: 0 !important;
+    }
+}
+
+@media (min-width: 992px) {
+    #main-content {
+        margin-left: 0;
+    }
+    
+    #sidebar.collapsed + #main-content {
+        margin-left: -280px;
+    }
+}
+
+/* ======== */
+/* Contents */
+/* ======== */
+
+/* Game Description */
+.game-desc {
+    text-align: center;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+/* Each Regions */
+.region-class {
+    /* background-color: #fff; */
+    text-align: center;
+}
+.section-mondstadt {
+    background-color: hsl(from var(--char-anemo) h s l / 0.3);
+    
+}
+.section-liyue {
+    background-color: hsl(from var(--char-geo) h s l / 0.3);
+}
+.section-inazuma {
+    background-color: hsl(from var(--char-electro) h s l / 0.3);
+}
+.section-sumeru {
+    background-color: hsl(from var(--char-dendro) h s l / 0.3);
+}
+.section-fontaine {
+    background-color: hsl(from var(--char-hydro) h s l / 0.3);
+}
+.section-natlan {
+    background-color: hsl(from var(--char-pyro) h s l / 0.3);
+}
+.section-nodKrai {
+    background-color: hsl(from var(--char-electro) h s l / 0.3);
+}
+
+/* Characters */
+.char-class {
+    width: 97px;
+    height: 97px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.element-icon {
+    
+    border-radius: 6px;
+}
+.char-class-anemo {
+    background-color: var(--char-anemo);
+}
+.char-class-pyro {
+    background-color: var(--char-pyro);
+}
+.char-class-hydro {
+    background-color: var(--char-hydro);
+}
+.char-class-electro {
+    background-color: var(--char-electro);
+}
+.char-class-dendro {
+    background-color: var(--char-dendro);
+}
+.char-class-cryo {
+    background-color: var(--char-cryo);
+}
+.char-class-geo {
+    background-color: var(--char-geo);
+}
+
+.char-class-anemo:hover {
+    transform: scale(1.1);
+    background-color: var(--char-anemo);
+}
+.char-class-pyro:hover {
+    transform: scale(1.1);
+    background-color: var(--char-pyro);
+}
+.char-class-hydro:hover {
+    transform: scale(1.1);
+    background-color: var(--char-hydro);
+}
+.char-class-electro:hover {
+    transform: scale(1.1);
+    background-color: var(--char-electro);
+}
+.char-class-dendro:hover {
+    transform: scale(1.1);
+    background-color: var(--char-dendro);
+}
+.char-class-cryo:hover {
+    transform: scale(1.1);
+    background-color: var(--char-cryo);
+}
+.char-class-geo:hover {
+    transform: scale(1.1);
+    background-color: var(--char-geo);
+}
+
+/* Other Stuff */
+.line-container {
+    display: flex;
+    align-items: center;
+}
+.line {
+    background-color: var(--text-primary);
+    display: block;
+    height: 3px;
+    width: 100vh;
+    border: 0;
+    margin: 3em auto;
+    padding: 0;
+}
+.line-head-tail {
+    background-color: var(--text-primary);
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+}
+
+.anim-fade-in {
+    animation: fade-in linear forwards;
+    animation-timeline: view(250px);
+}

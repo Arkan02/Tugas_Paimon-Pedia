@@ -1,0 +1,73 @@
+        /* Custom overrides for the Genshin Theme */
+        @font-face {
+    font-family: GenshinImpactFont;
+    src: url(assets/fonts/zh-cn.ttf);
+}
+        body {
+            background-color: #002a0e; /* Deep Green Background */
+            text-rendering: optimizeLegibility;
+        }
+        .default-font {
+    font-family: GenshinImpactFont;
+}
+.default-background{
+    background: radial-gradient(#00A028, #003A0E);
+}
+        /* The main card style */
+        .genshin-card {
+            background: linear-gradient(135deg, #00A028, #003A0E);
+            border: none;
+            border-radius: 25px; /* Extra rounded corners */
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        /* Custom Styles for specific elements that Bootstrap doesn't cover perfectly */
+        .char-card-bg {
+            height: 400px;
+            background: #00E239 opacity(0.5);
+            background-size: cover;
+        }
+
+        .artefact-pic {
+            display: inline-flex;
+            /* width: 100px;
+            height: 100px; */
+            background-size: cover;
+            text-align: center;
+            /* margin: 0px;
+            padding: 0px; */
+        }
+        .talent-pic {
+            display: inline-flex;
+        }
+        .weapon-pic {
+            display: inline-flex;
+            /* width: 35px;
+            height: 35px; */
+            /* margin-bottom: 10px ; */
+        }
+        .talent-icon {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+
+        .chibi-sticker {
+            width: 30%;
+            /* padding-bottom: 100%; */
+            /* height: 20vh; */
+            position: absolute;
+            right: 15px;
+            bottom: 15px;
+            opacity: 0.9;
+        }
+
+        /* Text underline style for the bio */
+        .bio-text {
+            font-size: 20px;
+            text-decoration: none;
+            /* border-bottom: 2px solid rgba(255,255,255,0.8); */
+            /* font-weight: 600; */
+            
+        }

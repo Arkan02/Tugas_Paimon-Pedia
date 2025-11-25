@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="assets/img/logo/Paimon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Paimon-Pedia</title>
+</head>
+
+<body class="default-color default-font">
+    <!-- =========== -->
+    <!-- Sidebar Bar -->
+    <!-- =========== -->
+    <nav id="sidebar">
+        <div class="sidebar-content"> 
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link py-3" href="#section-carousel"><i class="fa fa-home me-3" style="font-size:24px"></i>Homepage</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section-gamedesc">Game Description</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsible-link" href="#charactersSubmenu" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="charactersSubmenu">
+                        Regions
+                    </a>
+                    <div class="collapse" id="charactersSubmenu">
+                        <ul class="nav flex-column ps-3">
+                            <li class="nav-item">
+                                <a class="nav-link sub-link" href="#section-mondstadt">Mondstadt</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link sub-link" href="#section-liyue">Liyue</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link sub-link" href="#section-inazuma">Inazuma</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link sub-link" href="#section-sumeru">Sumeru</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link sub-link" href="#section-fontaine">Fontaine</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link sub-link" href="#section-natlan">Natlan</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link sub-link" href="#section-nodKrai">Nod Krai</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ============== -->
+    <!-- Navigation Bar -->
+    <!-- ============== -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" id="sidebarToggle">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="About-Dev.html" class=" btn-dev"><i class="fa fa-user-circle fa-2x mx-3" aria-hidden="true"></i></a>
+        </div>
+    </nav>
+        
+    <!-- ======== -->
+    <!-- Carousel -->
+    <!-- ======== -->
+    <section id="section-carousel" class="mt-5 pt-5">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/carousel/Banner_Mondstadt.png" alt="Mondstadt" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/carousel/Banner_Liyue.png" alt="Liyue" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/backgroundPics/Banner-Inazuma.png" alt="Inazuma" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/carousel/Banner_Sumeru.png" alt="Sumeru" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/backgroundPics/Banner-Fontaine.png" alt="Fontaine" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/carousel/Banner_Natlan.png" alt="Natlan" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/carousel/Banner_Nod-Krai.png" alt="Nod Krai" class="d-block w-100">
+                </div>
+            </div>
+            
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+    
+    <!-- ======== -->
+    <!-- Contents -->
+    <!-- ======== -->
+    
+    <!-- Game Description -->
+    <section id="section-gamedesc">
+        <div class="game-desc">
+
+                <div class="line-container">
+                    <div class="line-head-tail"></div>
+                    <div class="line"></div>
+                    <div class="line-head-tail"></div>
+                </div>
+
+                <h2 class="pb-5">About Genshin Impact</h2>
+                <p class="section-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur volutpat dictum ullamcorper. Nam lacinia dapibus venenatis. Donec mauris arcu, tempor non ex at, vehicula pretium nisl. Duis a ipsum ex. Maecenas eu nibh a tortor rhoncus fermentum. Praesent ultrices, tellus ut luctus pretium, leo magna egestas dui, a hendrerit nibh arcu id risus. Praesent fringilla nulla non ante finibus, eu rutrum libero fermentum. Nam sed nisl a arcu lobortis fringilla. Nam a scelerisque tortor. Morbi dui odio, scelerisque ac sodales sit amet, dignissim sagittis lacus. Duis cursus, sapien sed congue viverra, ipsum odio maximus enim, condimentum euismod diam quam condimentum mi. Sed dui eros, lacinia quis nibh sed, ultrices molestie sem. Etiam molestie libero erat, eget feugiat nisi hendrerit non. In aliquam ac purus vel finibus. Quisque pharetra metus id elit fermentum fermentum. Morbi vitae turpis id dui auctor accumsan. Aenean in tempor nibh. Mauris ultricies augue sapien, in finibus orci mollis sit amet. Vivamus sed lacus sed elit accumsan eleifend. Morbi ultrices lacus magna, eu aliquam urna gravida sit amet. 
+                </p>
+
+                <div class="line-container">
+                    <div class="line-head-tail"></div>
+                    <div class="line"></div>
+                    <div class="line-head-tail"></div>
+                </div>
+        </div>
+    </section>
+
+    <!-- ========== -->
+    <!-- Characters -->
+    <!-- ========== -->
+
+    <!--  -->
+    <section id="section-mondstadt" class="section-mondstadt py-3">
+        <div class="region-class my-5">
+            <h2 class="">Region 1</h2>
+            <!-- <div class="row">
+            </div> -->
+            <img src="assets/carousel/Banner_Mondstadt.png" alt="Mondstadt" class="my-5" height="240px" width="840px">
+
+            <div class="row d-flex justify-content-center">
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-pyro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#mondstadt-char-1">
+                <img src="assets/img/chars/mondstadt/Diluc_Icon.png" alt="Pyro" class="element-icon*">
+            </button>
+                    
+                </div>
+                <div class="col-1 mx-3 my-4">
+            <button type="button" class="btn char-class char-class-pyro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#mondstadt-char-2">
+            <img src="assets/img/chars/mondstadt/Klee_Icon 1.png" alt="Pyro" class="element-icon">
+            </button>
+            </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-hydro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#mondstadt-char-3">
+                <img src="assets/img/chars/mondstadt/Mona_Icon 1.png" alt="Hydro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-anemo p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#mondstadt-char-1">
+                        <img src="assets/img/chars/mondstadt/Jean_Icon 1.png" alt="Anemo" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-anemo p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#mondstadt-char-1">
+                        <img src="assets/img/chars/mondstadt/Venti_Icon 1.png" alt="Anemo" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-cryo p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#mondstadt-char-1">
+                        <img src="assets/img/chars/mondstadt/Eula_Icon 1.png" alt="Cryo" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-geo p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#mondstadt-char-1">
+                        <img src="assets/img/chars/mondstadt/Albedo_Icon 1.png" alt="Geo" class="element-icon">
+                    </button>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-pyro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#mondstadt-char-1">
+                        <img src="assets/img/chars/mondstadt/Bennett_Icon 1.png" alt="Pyro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-pyro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#mondstadt-char-1">
+                        <img src="assets/img/chars/mondstadt/image 5.png" alt="Pyro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-hydro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#mondstadt-char-1">
+                        <img src="assets/img/chars/mondstadt/Dahlia_Icon 1.png" alt="Hydro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-hydro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#mondstadt-char-1">
+                        <img src="assets/img/chars/mondstadt/Barbara_Icon 1.png" alt="Hydro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-anemo p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#mondstadt-char-1">
+                        <img src="assets/img/chars/mondstadt/Sucrose_Icon 1.png" alt="Anemo" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-electro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#mondstadt-char-1">
+                        <img src="assets/img/chars/mondstadt/Lisa_Icon 1.png" alt="Electro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-electro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#mondstadt-char-1">
+                        <img src="assets/img/chars/mondstadt/Fischl_Icon 1.png" alt="Electro" class="element-icon">
+                    </button>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-electro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#mondstadt-char-1">
+                        <img src="assets/img/chars/mondstadt/Razor_Icon 1.png" alt="Electro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-cryo p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#mondstadt-char-1">
+                        <img src="assets/img/chars/mondstadt/Rosaria_Icon 1.png" alt="Cryo" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-cryo p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#mondstadt-char-1">
+                        <img src="assets/img/chars/mondstadt/Diona_Icon 1.png" alt="Cryo" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-cryo p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#mondstadt-char-1">
+                        <img src="assets/img/chars/mondstadt/Kaeya_Icon 1.png" alt="Cryo" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-cryo p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#mondstadt-char-1">
+                        <img src="assets/img/chars/mondstadt/Mika_Icon 1.png" alt="Cryo" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-cryo p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#mondstadt-char-1">
+                        <img src="assets/img/chars/mondstadt/Aloy_Icon 1.png" alt="Cryo" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-geo p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#mondstadt-char-1">
+                        <img src="assets/img/chars/mondstadt/Noelle_Icon 1.png" alt="Geo" class="element-icon">
+                    </button>
+                </div>
+            </div>
+            <!-- Modals (Popups) -->
+            <div class="modal fade" id="mondstadt-char-1" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <img src="assets/img/chars/mondstadt/8ce68da762f44391328e1bcf2965d718_4648427706092041569 1.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="mondstadt-char-2" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <img src="assets/img/chars/mondstadt/8b75f14b5306b21ae955c3f1e31e5c45_1654837195448563870 1.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="mondstadt-char-3" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <img src="assets/img/chars/mondstadt/64d78b5531cf612f31a85988ffc91ae3_959247502803751307 1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section-liyue" class="section-liyue py-3">
+        <div class="region-class my-5">
+            <h2 class="">Region 2</h2>
+            <img src="assets/carousel/Banner_Liyue.png" alt="Liyue" class="my-5" height="240px" width="840px">
+            <div class="row d-flex justify-content-center">
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-pyro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#liyue-char-1">
+                        <img src="assets/img/chars/liyue/Hu_Tao_Icon 1.png" alt="Pyro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-hydro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#liyue-char-1">
+                        <img src="assets/img/chars/liyue/Yelan_Icon 1.png" alt="Hydro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-hydro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#liyue-char-1">
+                        <img src="assets/img/chars/liyue/Tartaglia_Icon 1.png" alt="Hydro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-anemo p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#liyue-char-1">
+                        <img src="assets/img/chars/liyue/Xianyun_Icon 1.png" alt="Anemo" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-anemo p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#liyue-char-1">
+                        <img src="assets/img/chars/liyue/Xiao_Icon 1.png" alt="Anemo" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-electro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#liyue-char-1">
+                        <img src="assets/img/chars/liyue/Keqing_Icon 1.png" alt="Electro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-dendro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#liyue-char-1">
+                        <img src="assets/img/chars/liyue/Baizhu_Icon 1.png" alt="Dendro" class="element-icon">
+                    </button>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-cryo p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#liyue-char-1">
+                        <img src="assets/img/chars/liyue/Shenhe_Icon 1.png" alt="Cryo" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-cryo p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#liyue-char-1">
+                        <img src="assets/img/chars/liyue/Ganyu_Icon 1.png" alt="Cryo" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-cryo p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#liyue-char-1">
+                        <img src="assets/img/chars/liyue/Qiqi_Icon 1.png" alt="Cryo" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-geo p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#liyue-char-1">
+                        <img src="assets/img/chars/liyue/Zhongli_Icon 1.png" alt="Geo" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-pyro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#liyue-char-1">
+                        <img src="assets/img/chars/liyue/Xiangling_Icon 1.png" alt="Pyro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-pyro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#liyue-char-1">
+                        <img src="assets/img/chars/liyue/Xinyan_Icon 1.png" alt="Pyro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-pyro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#liyue-char-1">
+                        <img src="assets/img/chars/liyue/Yanfei_Icon 1.png" alt="Pyro" class="element-icon">
+                    </button>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-pyro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#liyue-char-1">
+                        <img src="assets/img/chars/liyue/Gaming_Icon 1.png" alt="Pyro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-hydro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#liyue-char-1">
+                        <img src="assets/img/chars/liyue/Xingqiu_Icon 1.png" alt="Hydro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-anemo p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#liyue-char-1">
+                        <img src="assets/img/chars/liyue/Lan_Yan_Icon 1.png" alt="Anemo" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-electro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#liyue-char-1">
+                        <img src="assets/img/chars/liyue/Beidou_Icon 1.png" alt="Electro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-dendro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#liyue-char-1">
+                        <img src="assets/img/chars/liyue/Yaoyao_Icon 1.png" alt="Dendro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-cryo p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#liyue-char-1">
+                        <img src="assets/img/chars/liyue/Chongyun_Icon 1.png" alt="Cryo" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-geo p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#liyue-char-1">
+                        <img src="assets/img/chars/liyue/Ningguang_Icon 1.png" alt="Geo" class="element-icon">
+                    </button>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-geo p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#liyue-char-1">
+                        <img src="assets/img/chars/liyue/Yun_Jin_Icon 1.png" alt="Geo" class="element-icon">
+                    </button>
+                </div>
+            </div>
+            <!-- Modals (Popups) -->
+            <div class="modal fade" id="liyue-char-1" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <img src="assets/carousel/2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <section id="section-inazuma" class="section-inazuma py-3">
+        <div class="region-class my-5">
+            <h2 class="">Region 3</h2>
+            <img src="assets/carousel/Banner_Inazuma.png" alt="inazuma" class="my-5" height="240px" width="840px">
+            <div class="row d-flex justify-content-center">
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-pyro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#inazuma-char-1">
+                        <img src="assets/img/chars/inazuma/Yoimiya_Icon 1.png" alt="Pyro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-hydro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#inazuma-char-1">
+                        <img src="assets/img/chars/inazuma/Kamisato_Ayato_Icon 1.png" alt="Hydro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-hydro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#inazuma-char-1">
+                        <img src="assets/img/chars/inazuma/Sangonomiya_Kokomi_Icon 1.png" alt="Hydro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-anemo p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#inazuma-char-1">
+                        <img src="assets/img/chars/inazuma/Kaedehara_Kazuha_Icon 1.png" alt="Anemo" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-anemo p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#inazuma-char-1">
+                        <img src="assets/img/chars/inazuma/Yumemizuki_Mizuki_Icon 1.png" alt="Anemo" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-electro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#inazuma-char-1">
+                        <img src="assets/img/chars/inazuma/Raiden_Shogun_Icon 1.png" alt="Electro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-electro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#inazuma-char-1">
+                        <img src="assets/img/chars/inazuma/Yae_Miko_Icon 1.png" alt="Electro" class="element-icon">
+                    </button>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-cryo p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#inazuma-char-1">
+                        <img src="assets/img/chars/inazuma/Kamisato_Ayaka_Icon 1.png" alt="Cryo" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-geo p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#inazuma-char-1">
+                        <img src="assets/img/chars/inazuma/Arataki_Itto_Icon 1.png" alt="Geo" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-geo p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#inazuma-char-1">
+                        <img src="assets/img/chars/inazuma/Chiori_Icon 1.png" alt="Geo" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-pyro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#inazuma-char-1">
+                        <img src="assets/img/chars/inazuma/Thoma_Icon 1.png" alt="Pyro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-anemo p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#inazuma-char-1">
+                        <img src="assets/img/chars/inazuma/Sayu_Icon 1.png" alt="Anemo" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-anemo p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#inazuma-char-1">
+                        <img src="assets/img/chars/inazuma/Shikanoin_Heizou_Icon 1.png" alt="Anemo" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-electro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#inazuma-char-1">
+                        <img src="assets/img/chars/inazuma/Kujou_Sara_Icon 1.png" alt="Electro" class="element-icon">
+                    </button>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-electro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#inazuma-char-1">
+                        <img src="assets/img/chars/inazuma/Kuki_Shinobu_Icon 1.png" alt="Electro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-dendro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#inazuma-char-1">
+                        <img src="assets/img/chars/inazuma/Kirara_Icon 1.png" alt="Dendro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-geo p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#inazuma-char-1">
+                        <img src="assets/img/chars/inazuma/Gorou_Icon 1.png" alt="Geo" class="element-icon">
+                    </button>
+                </div>
+            </div>
+            <!-- Modals (Popups) -->
+            <div class="modal fade" id="inazuma-char-1" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <img src="assets/carousel/3.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <section id="section-sumeru" class="section-sumeru py-3">
+        <div class="region-class my-5">
+            <h2 class="">Region 4</h2>
+            <img src="assets/carousel/Banner_Sumeru.png" alt="Sumeru" class="my-5" height="240px" width="840px">
+            <div class="row d-flex justify-content-center">
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-pyro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#sumeru-char-1">
+                        <img src="assets/img/chars/sumeru/Dehya_Icon 1.png" alt="Pyro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-hydro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#sumeru-char-1">
+                        <img src="assets/img/chars/sumeru/Nilou_Icon 1.png" alt="Hydro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-anemo p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#sumeru-char-1">
+                        <img src="assets/img/chars/sumeru/Wanderer_Icon 1.png" alt="Anemo" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-electro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#sumeru-char-1">
+                        <img src="assets/img/chars/sumeru/Cyno_Icon 1.png" alt="Electro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-dendro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#sumeru-char-1">
+                        <img src="assets/img/chars/sumeru/Tighnari_Icon 1.png" alt="Dendro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-dendro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#sumeru-char-1">
+                        <img src="assets/img/chars/sumeru/Nahida_Icon 1.png" alt="Dendro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-dendro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#sumeru-char-1">
+                        <img src="assets/img/chars/sumeru/Alhaitham_Icon 1.png" alt="Dendro" class="element-icon">
+                    </button>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-hydro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#sumeru-char-1">
+                        <img src="assets/img/chars/sumeru/Candace_Icon 1.png" alt="Hydro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-anemo p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#sumeru-char-1">
+                        <img src="assets/img/chars/sumeru/Faruzan_Icon 1.png" alt="Anemo" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-electro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#sumeru-char-1">
+                        <img src="assets/img/chars/sumeru/Dori_Icon 1.png" alt="Electro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-electro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#sumeru-char-1">
+                        <img src="assets/img/chars/sumeru/Sethos_Icon 1.png" alt="Electro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-dendro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#sumeru-char-1">
+                        <img src="assets/img/chars/sumeru/Collei_Icon 1.png" alt="Dendro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-dendro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#sumeru-char-1">
+                        <img src="assets/img/chars/sumeru/Kaveh_Icon 1.png" alt="Dendro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-cryo p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#sumeru-char-1">
+                        <img src="assets/img/chars/sumeru/Layla_Icon 1.png" alt="Cryo" class="element-icon">
+                    </button>
+                </div>
+            </div>
+            <!-- Modals (Popups) -->
+            <div class="modal fade" id="sumeru-char-1" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <img src="assets/carousel/4.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section-fontaine" class="section-fontaine py-3">
+        <div class="region-class my-5">
+            <h2 class="">Region 5</h2>
+            <img src="assets/carousel/Banner_Fontaine.png" alt="Fontaine" class="my-5" height="240px" width="840px">
+            <div class="row d-flex justify-content-center">
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-pyro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#fontaine-char-1">
+                        <img src="assets/img/chars/fontaine/Lyney_Icon 1.png" alt="Pyro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-pyro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#fontaine-char-1">
+                        <img src="assets/img/chars/fontaine/Arlecchino_Icon 1.png" alt="Pyro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-hydro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#fontaine-char-1">
+                        <img src="assets/img/chars/fontaine/Neuvillette_Icon 1.png" alt="Hydro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-hydro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#fontaine-char-1">
+                        <img src="assets/img/chars/fontaine/Furina_Icon 1.png" alt="Hydro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-hydro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#fontaine-char-1">
+                        <img src="assets/img/chars/fontaine/Sigewinne_Icon 1.png" alt="Hydro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-electro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#fontaine-char-1">
+                        <img src="assets/img/chars/fontaine/Clorinde_Icon 1.png" alt="Electro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-dendro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#fontaine-char-1">
+                        <img src="assets/img/chars/fontaine/Emilie_Icon 1.png" alt="Dendro" class="element-icon">
+                    </button>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-cryo p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#fontaine-char-1">
+                        <img src="assets/img/chars/fontaine/Escoffier_Icon 1.png" alt="Cryo" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-cryo p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#fontaine-char-1">
+                        <img src="assets/img/chars/fontaine/Wriothesley_Icon 1.png" alt="Cryo" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-cryo p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#fontaine-char-1">
+                        <img src="assets/img/chars/fontaine/Skirk_Icon 1.png" alt="Cryo" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-pyro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#fontaine-char-1">
+                        <img src="assets/img/chars/fontaine/Chevreuse_Icon 1.png" alt="Pyro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-anemo p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#fontaine-char-1">
+                        <img src="assets/img/chars/fontaine/Lynette_Icon 1.png" alt="Anemo" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-cryo p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#fontaine-char-1">
+                        <img src="assets/img/chars/fontaine/Freminet_Icon 1.png" alt="Cryo" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-cryo p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#fontaine-char-1">
+                        <img src="assets/img/chars/fontaine/Charlotte_Icon 1.png" alt="Cryo" class="element-icon">
+                    </button>
+                </div>
+            </div>
+            <!-- Modals (Popups) -->
+            <div class="modal fade" id="fontaine-char-1" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <img src="assets/carousel/5.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section-natlan" class="section-natlan py-3">
+        <div class="region-class my-5">
+            <h2 class="">Region 6</h2>
+            <img src="assets/carousel/Banner_natlan.png" alt="natlan" class="my-5" height="240px" width="840px">
+            <div class="row d-flex justify-content-center">
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-pyro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#natlan-char-1">
+                        <img src="assets/img/chars/natlan/Mavuika_Icon 1.png" alt="Pyro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-hydro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#natlan-char-1">
+                        <img src="assets/img/chars/natlan/Mualani_Icon 1.png" alt="Hydro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-anemo p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#natlan-char-1">
+                        <img src="assets/img/chars/natlan/Chasca_Icon 1.png" alt="Anemo" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-electro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#natlan-char-1">
+                        <img src="assets/img/chars/natlan/Varesa_Icon 1.png" alt="Electro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-dendro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#natlan-char-1">
+                        <img src="assets/img/chars/natlan/Kinich_Icon 1.png" alt="Dendro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-cryo p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#natlan-char-1">
+                        <img src="assets/img/chars/natlan/Citlali_Icon 1.png" alt="Cryo" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-geo p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#natlan-char-1">
+                        <img src="assets/img/chars/natlan/Xilonen_Icon 1.png" alt="Geo" class="element-icon">
+                    </button>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-anemo p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#natlan-char-1">
+                        <img src="assets/img/chars/natlan/Ifa_Icon 1.png" alt="Anemo" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-electro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#natlan-char-1">
+                        <img src="assets/img/chars/natlan/Iansan_Icon 1.png" alt="Electro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-electro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#natlan-char-1">
+                        <img src="assets/img/chars/natlan/Ororon_Icon 1.png" alt="Electro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-geo p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#natlan-char-1">
+                        <img src="assets/img/chars/natlan/Kachina_Icon 1.png" alt="Goo" class="element-icon">
+                    </button>
+                </div>
+            </div>
+            <!-- Modals (Popups) -->
+            <div class="modal fade" id="natlan-char-1" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <img src="assets/carousel/6.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <section id="section-nodKrai" class="section-nodKrai py-3">
+        <div class="region-class my-5">
+            <h2 class="">Region 7</h2>
+            <img src="assets/carousel/Banner_Nod-Krai.png" alt="nodkrai" class="my-5" height="240px" width="840px">
+            <div class="row d-flex justify-content-center">
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-electro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#nodkrai-char-1">
+                        <img src="assets/img/chars/nod-krai/Flins_Icon 1.png" alt="Electro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-electro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#nodkrai-char-1">
+                        <img src="assets/img/chars/nod-krai/Ineffa_Icon 1.png" alt="Electro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-dendro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#nodkrai-char-1">
+                        <img src="assets/img/chars/nod-krai/Lauma_Icon 1.png" alt="Dendro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <a href="nefer.html">
+
+                        <button type="button" class="btn char-class char-class-dendro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#nodkrai-char-1">
+                            <img src="assets/img/chars/nod-krai/Nefer_Icon 1.png" alt="Dendro" class="element-icon">
+                        </button>
+                    </a>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-hydro p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#nodkrai-char-1">
+                        <img src="assets/img/chars/nod-krai/Aino_Icon 1.png" alt="Hydro" class="element-icon">
+                    </button>
+                </div>
+                <div class="col-1 mx-3 my-4">
+                    <button type="button" class="btn char-class char-class-anemo p-0 shadow-none" data-bs-toggle="modal" data-bs-target="#nodkrai-char-1">
+                        <img src="assets/img/chars/nod-krai/Traveler_Icon 1.png" alt="Anemo" class="element-icon">
+                    </button>
+                </div>
+            </div>
+            <!-- Modals (Popups) -->
+            <div class="modal fade" id="nodkrai-char-1" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <img src="assets/carousel/7.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+<footer class="d-flex justify-content-center align-content-center py-3" style="color: #333333; font-size: small; background-color: hsl(0, 0%, 70%);">
+        <p>&copy; 2025 PT. Paimon Pedia Persero Tbk. All rights reserved.</p>
+    </footer>
+
+</html>

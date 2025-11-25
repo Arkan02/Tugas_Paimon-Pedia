@@ -1,0 +1,52 @@
+:root {
+
+}
+
+@font-face {
+    font-family: GenshinImpactFont;
+    src: url(assets/fonts/zh-cn.ttf);
+}
+body {
+    font-family: GenshinImpactFont;
+}
+
+.col-left {
+    width: 40%;
+}
+.splash-box {
+    text-align: center;
+}
+.talent-box {
+    text-align: center;
+}
+.talent-box-in {
+    width: 50%;
+    height: 50%;
+}
+.arte-box {
+    width: 100%;
+    height: 10%;
+}
+.weap-box {
+
+}
+.comp-box {
+
+}
+.about-box {
+
+}
+
+.splash-img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.talent-img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    object-position: center;
+}

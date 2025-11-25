@@ -1,0 +1,120 @@
+/* Use a serif font like in the image */
+@font-face {
+  font-family:GenshinImpactFont;
+  src: url(assets/fonts/zh-cn.ttf);
+}
+.default-font {
+  font-family:GenshinImpactFont;
+}
+
+.default-color{
+    background-color: #0c0c0c;
+    color: #dadada;
+}
+.navbar {
+    background-color: #151515;
+    color: #dadada;
+    border-bottom: 1px solid #dadada;
+}
+
+/* Wrapper to position sidebar and main content */
+#wrapper {
+    /* Account for the 56px fixed navbar */
+    padding-top: 56px; 
+    /* Ensure it fills the height */
+    min-height: 100vh;
+}
+
+/* Main Content Area Styling */
+#main-content {
+    background-color: #e9ecef; /* Light gray background */
+    transition: margin-left 0.3s ease-in-out;
+}
+
+/* Sidebar Styling */
+#sidebar {
+    width: 280px;
+    min-height: calc(100vh - 56px); /* Full height minus navbar */
+    transition: margin-left 0.3s ease-in-out;
+    overflow-y: auto; /* Allow scrolling if content is long */
+}
+
+/* Collapsed state for sidebar */
+#sidebar.collapsed {
+    margin-left: -280px;
+}
+
+/* Sidebar links */
+#sidebar .nav-link {
+    color: white;
+    font-size: 1.1rem;
+    padding: 0.75rem 1.5rem;
+}
+
+#sidebar .nav-link:hover {
+    background-color: #495057;
+}
+
+/* Style for the collapsible "Characters" link */
+.collapsible-link::before {
+    content: '\25B6'; /* Right-pointing triangle */
+    display: inline-block;
+    margin-right: 0.5rem;
+    font-size: 0.8rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Rotate triangle when menu is open */
+.collapsible-link[aria-expanded="true"]::before {
+    transform: rotate(90deg);
+}
+
+/* Style for sub-menu links (Mondstadt, Liyue) */
+.sub-link {
+    padding-left: 1rem !important; /* Indent */
+}
+
+.sub-link::before {
+    content: '\2022'; /* Bullet point */
+    display: inline-block;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+    color: white;
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 991.98px) {
+    #sidebar {
+        /* On small screens, make it a fixed overlay */
+        position: fixed;
+        top: 56px;
+        left: 0;
+        z-index: 1030;
+        margin-left: -280px; /* Start hidden */
+    }
+
+    #sidebar.collapsed {
+        margin-left: -280px;
+    }
+
+    #sidebar:not(.collapsed) {
+        margin-left: 0; /* Show when toggled */
+    }
+
+    /* Main content is always full-width on mobile */
+    #main-content {
+        margin-left: 0 !important; 
+    }
+}
+
+/* Responsive styles for large screens */
+@media (min-width: 992px) {
+    /* On large screens, push the main content */
+    #main-content {
+        margin-left: 0;
+    }
+    
+    #sidebar.collapsed + #main-content {
+        margin-left: -280px;
+    }
+}

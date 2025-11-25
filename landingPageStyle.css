@@ -1,0 +1,74 @@
+@font-face {
+    font-family: GenshinImpactFont;
+    src: url(assets/fonts/zh-cn.ttf);
+}
+
+body, a {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+h1 {
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #393E46; 
+}
+
+a {
+    text-decoration: none !important;
+    background: none;
+}
+
+a:link, a:visited {
+    color: #ffffff;
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid #ffffff;
+    border-radius: 12px;
+    /* font-weight: bold; */
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    transition: all 0.3s ease-in-out;
+    /* box-shadow: 0 0 10px rgba(255, 255, 255, 0.15); */
+}
+
+a:hover, a:active {
+    color: #28282b !important;
+    background: #ffffff;
+    /* box-shadow: 0 0 20px rgba(255, 255, 255, 0.6); */
+    transform: translateY(-2px);
+}
+
+.default-font {
+    font-family: GenshinImpactFont;
+}
+
+.background-img {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.background-img::before {
+    content: "";
+    position: fixed; /* stays in place when scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/img/backgroundPics/landingPageBG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    z-index: -1; /* keep it behind the content */
+}
+
+    
